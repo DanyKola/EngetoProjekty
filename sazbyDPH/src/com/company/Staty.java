@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
@@ -65,8 +66,6 @@ public class Staty {
     public String toString() {
         return zkratkaStatu + " " + nazevStatu + " " + plnaSazbaDPH +" "+ snizenaSazbaDPH +" "+ specialniDPH;
     }
-
-
 
 
 
