@@ -9,7 +9,7 @@ import static java.util.Collections.*;
 
 public class StatyDPH {
 
-    //1. Načti ze souboru všechna data do vhodné datové struktury (vytvoř třídu pro uložení dat).
+//1. Načti ze souboru všechna data do vhodné datové struktury (vytvoř třídu pro uložení dat).
     public static final String DELIMETR = "\t";
     public static final String FILE_NAME = "vat-eu.csv";
 
@@ -70,4 +70,4 @@ public class StatyDPH {
 
 
 
-    }
+}
