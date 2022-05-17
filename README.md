@@ -39,7 +39,7 @@ Postupně zpracuj tyto kroky:
 - Uprav název výstupního souboru tak, aby reflektoval zadanou sazbu daně. Například pro zadanou sazbu 17 % se vygeneruje soubor vat-over-17.txt a pro sazbu 25 % se vygeneruje soubor vat-over-25.txt.
 
 
-# Projekt č. 1 - Sazby DPH
+# Projekt č. 2 - Sazby DPH JSON
 Zadání
 ------
 Podobně jako v u prvního projektu budeme pracovat s daňovými sazbami, ale tentokrát nebudeme data získávat přímo ze souboru, ale zde: https://euvatrates.com/rates.json a nepůjde o parsování obyčejného textového souboru, ale data budou ve formátu JSON.
