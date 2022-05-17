@@ -1,0 +1,6 @@
+Luxembourg ........... DPH = 17.0
+Malta ........... DPH = 18.0
+Cyprus ........... DPH = 19.0
+Croatia ........... DPH = 25.0
+Sweden ........... DPH = 25.0
+Hungary ........... DPH = 27.0
