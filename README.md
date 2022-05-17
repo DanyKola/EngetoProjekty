@@ -37,3 +37,19 @@ Postupně zpracuj tyto kroky:
 
 - Pokud uživatel zmáčkne pouze Enter, jako výchozí hodnota se použij jako výchozí sazbu 20 %.
 - Uprav název výstupního souboru tak, aby reflektoval zadanou sazbu daně. Například pro zadanou sazbu 17 % se vygeneruje soubor vat-over-17.txt a pro sazbu 25 % se vygeneruje soubor vat-over-25.txt.
+
+
+# Projekt č. 1 - Sazby DPH
+Zadání
+------
+Podobně jako v u prvního projektu budeme pracovat s daňovými sazbami, ale tentokrát nebudeme data získávat přímo ze souboru, ale zde: https://euvatrates.com/rates.json a nepůjde o parsování obyčejného textového souboru, ale data budou ve formátu JSON.
+
+Výstup aplikace
+---------------
+Úkolem bude data načíst, rozparsovat, uložit, vyhledat 3 země s nejvyššími sazbami a 3 země s nejnižšími sazbami a vypsat je.
+- Zavolat API pomocí HTTP
+-  Načíst JSON soubor
+- Naparsovat JSON soubor do objektu
+- Implementovat vyhledávací logiku
+- Vypsat hodnoty pomocí interaktivní příkazové řádky
+- Umožnit zapsat výsledek do souboru
