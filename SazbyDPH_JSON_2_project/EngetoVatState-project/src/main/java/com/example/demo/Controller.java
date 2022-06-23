@@ -30,7 +30,7 @@ public class Controller {
           servis.transformaceZHashNaArray();
      }
 
-//Výpis všechny země
+
      @GetMapping(path = "/vypisVsechnyZeme")
      public String najdiVsechnyZeme()  {
           for ( int i=0; i<servis.transformaceZHashNaArray().size(); i++) {
@@ -41,7 +41,7 @@ public class Controller {
                     + vypisZameCelkem;
      }
 
-     //Výpis 3 zemí s nejnižší DPH
+   
      @GetMapping(path = "/vypisTriZemeMinDph")
      public String najdiTriZemeMinDPH() {
           for (int i = 0; i < 3; i++) {
@@ -52,7 +52,7 @@ public class Controller {
                   + vypisTriMinZemeCelkem;
      }
 
-//Výpis 3 zemí s nejvyšší DPH
+
      @GetMapping(path = "/vypisTriZemeMaxDph")
      public String  najdiTriZemeMaxDPH()  {
           for ( int i= servis.transformaceZHashNaArray().size()-3; i<servis.transformaceZHashNaArray().size(); i++) {
