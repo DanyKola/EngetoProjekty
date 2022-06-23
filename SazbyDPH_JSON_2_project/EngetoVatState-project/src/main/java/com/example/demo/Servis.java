@@ -20,11 +20,11 @@ public class Servis {
     private List<DPHZeme> listDphZeme;
 
 
-    //mapování objektů z JSON do Java a zpět
+    
     public MapDphZeme mapovaniDoObjektu (String body) throws JsonProcessingException {
-        //Zavolám si Mapper
+        
         ObjectMapper objectMapper = new ObjectMapper();
-        //globální funkce, kterou lze použít k potlačení všech selhání způsobených neznámými (nemapovanými) vlastnostmi
+        
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         mapDphZeme = objectMapper.readValue(body, MapDphZeme.class);
 
@@ -33,13 +33,13 @@ public class Servis {
         return mapDphZeme;
     }
 
-    //Hashmapy na ArrayList a setřídění
+   
     public List<DPHZeme> transformaceZHashNaArray() {
         listDphZeme = new ArrayList<>(mapDphZeme.getZemeMap().values());
         Collections.sort(listDphZeme);
         return listDphZeme;
     }
-    //Export do souboru
+    
     public void exportDoSouboru (String filename)  throws VatException {
         try (PrintWriter writer = new PrintWriter(new FileOutputStream(filename))) {
             for (int i = 0; i < 3; i++) {
