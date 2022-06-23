@@ -8,10 +8,9 @@ public class MainConsole {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-//Vypsání souboru do konzole
-        //vytvoření instance třídy Zavolání Appi
+
         ZavolaniAppi appi = new ZavolaniAppi();
-        // zavolání metody zavolejAppi
+       
         String body = appi.zavolejAppi();
 
         Servis servis = new Servis();
@@ -19,7 +18,7 @@ public class MainConsole {
 
         System.out.println();
 
-//Vypsání objektů do konzole
+
         System.out.println("Výpis objektů - všechny země:");
         System.out.println("------------------------");
         for (int i = 0; i < servis.transformaceZHashNaArray().size(); i++) {
@@ -42,7 +41,6 @@ public class MainConsole {
         }
 
 
-//Vložení do souboru
             try {
                 servis.exportDoSouboru(TOP_MAX_MIN_DPH_STATES);
             } catch (VatException e) {
