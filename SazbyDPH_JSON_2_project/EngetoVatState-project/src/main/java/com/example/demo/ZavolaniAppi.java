@@ -14,10 +14,8 @@ public class ZavolaniAppi {
        
         HttpClient httpClient = HttpClient.newBuilder().build();
 
-        
         HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(POSTS_API_URL)).GET().build();
-
-        
+      
         HttpResponse<String> httpResponse = httpClient.send(httpRequest,HttpResponse.BodyHandlers.ofString());
 
       
