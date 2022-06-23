@@ -11,17 +11,16 @@ public class ZavolaniAppi {
 
     public String zavolejAppi() throws IOException, InterruptedException {
 
-        //HttpClient  = Vytvoření HTTP klienta
+       
         HttpClient httpClient = HttpClient.newBuilder().build();
 
-        //HttpRequest = Vytvoření HTTP požadavku - specifikuji adresu a metodu volání GET
+        
         HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(POSTS_API_URL)).GET().build();
 
-        //HttpResponse = zavolání
+        
         HttpResponse<String> httpResponse = httpClient.send(httpRequest,HttpResponse.BodyHandlers.ofString());
 
-        //Vypíšeme status 200
-        //Vypíše obsah
+      
         System.out.println(httpResponse.statusCode());
         System.out.println(httpResponse.body());
         return httpResponse.body();
